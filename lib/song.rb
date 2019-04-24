@@ -35,7 +35,6 @@ class Song
   end
   
   def self.find_or_create_by_name(name)
-<<<<<<< HEAD
     if song = self.find_by_name(name)
       return song
     else
@@ -63,11 +62,4 @@ class Song
   def self.destroy_all
     self.all.clear
   end
-=======
-    if !self.find_by_name(name)
-      self.create_by_name(name)
-    end
-    song
-  end
->>>>>>> 38c892e9f6633b33011de8149965a4a98a48d01d
 end
